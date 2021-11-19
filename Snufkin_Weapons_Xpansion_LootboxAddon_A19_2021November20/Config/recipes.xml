@@ -1,0 +1,46 @@
+<configs>
+	<append xpath="/recipes">
+	
+	<recipe name="LootboxMachine" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="resourceWood" count="1000"/>
+	<ingredient name="resourceSpring" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+	<ingredient name="resourceElectricParts" count="30"/>
+</recipe>
+
+		<recipe name="Yellow Ticket" count="1" craft_time="0" >
+			<ingredient name="Green Ticket" count="10"/>
+		</recipe>
+		<recipe name="Red Ticket" count="1" craft_time="0" >
+			<ingredient name="Yellow Ticket" count="10"/>
+		</recipe>
+		<recipe name="Purple Ticket" count="1" craft_time="0" >
+			<ingredient name="Red Ticket" count="10"/>
+		</recipe>
+		<recipe name="LVL1 Green LootBox" count="1" craft_area="LootboxMachine" craft_time="0" >
+			<ingredient name="Green Ticket" count="1"/>
+			<ingredient name="Yellow Ticket" count="0"/>
+			<ingredient name="Red Ticket" count="0"/>
+			<ingredient name="Purple Ticket" count="0"/>
+		</recipe>
+		<recipe name="LVL2 Yellow LootBox" count="1" craft_area="LootboxMachine" craft_time="0" >
+			<ingredient name="Green Ticket" count="0"/>
+			<ingredient name="Yellow Ticket" count="1"/>
+			<ingredient name="Red Ticket" count="0"/>
+			<ingredient name="Purple Ticket" count="0"/>
+		</recipe>
+		<recipe name="LVL3 Red LootBox" count="1" craft_area="LootboxMachine" craft_time="0" >
+			<ingredient name="Green Ticket" count="0"/>
+			<ingredient name="Yellow Ticket" count="0"/>
+			<ingredient name="Red Ticket" count="1"/>
+			<ingredient name="Purple Ticket" count="0"/>
+		</recipe>
+		<recipe name="LVL4 Purple LootBox" count="1" craft_area="LootboxMachine" craft_time="0" >
+			<ingredient name="Green Ticket" count="0"/>
+			<ingredient name="Yellow Ticket" count="0"/>
+			<ingredient name="Red Ticket" count="0"/>
+			<ingredient name="Purple Ticket" count="1"/>
+		</recipe>
+	</append>
+</configs>

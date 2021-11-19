@@ -1,0 +1,74 @@
+<config>
+	<append xpath="/controls">
+		<lootboxentry>
+			<rect controller="CharacterFrameWindow" pos="${posx},${posy}">
+				<panel name="header" pos="99999,99999" width="0" height="0">
+					<sprite depth="2" name="windowIcon" pos="99999,99999" width="0" height="0"/>
+					<label depth="2" name="characterName" pos="99999,99999" width="0" height="0"/>
+					<sprite depth="2" name="windowIcon" pos="99999,99999" width="0" height="0"/>
+					<label depth="2" name="levelNumber" pos="99999,99999" width="0" height="0"/>
+				</panel>
+				<rect depth="1" name="searchControls">
+					<sprite depth="8" name="backgroundMain" pos="99999,99999" width="0" height="0"/>
+					<button depth="8" visible="{showstats}" name="characterButton" style="press" width="1" height="1" pivot="center" collider_scale="9000" selected="true">
+						<sprite color="0,0,0,200" type="sliced" width="99999" height="99999" pos="-1500,1500" pivot="center" globalopacity="true" />
+					</button>
+					<button depth="-11" name="statButton" style="press" width="3" hoverscale="1.075" height="1" pos="0,0" collider_scale="80.0" pivot="center">
+						<texture width="267" height="99" texture="@https://i.postimg.cc/${texture}.png" pivot="center" depth="-11" />
+					</button>
+					<button depth="4" name="coreStatButton" style="icon30px, press" pos="99999,99999" width="0" height="0" sprite="ui_game_symbol_trophy" pivot="center"/>
+				</rect>
+				<rect>
+					<panel name="previewFrame" pos="99999,99999" width="0" height="0">
+						<rect>
+							<sprite depth="8" name="backgroundMain" pos="99999,99999" width="0" height="0"/>
+							<texture depth="2" name="playerPreview" pos="99999,99999" size="1,1"/>
+						</rect>
+					</panel>
+					<panel name="equipment" pos="99999,99999" width="0" height="0">
+						<grid name="inventory"></grid>
+					</panel>
+				</rect>
+				<rect visible="{showcharacter}"></rect>
+				<rect depth="62" pos="${-755-posx},${50-posy}"  visible="{showstats}">
+					<sprite depth="63" color="[black]" type="sliced" width="600" height="500" globalopacity="true" />
+					<sprite depth="64" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="600" height="500" color="[black]" type="sliced" fillcenter="false" />
+					<sprite depth="66" color="[black]" type="sliced" width="600" height="50" globalopacity="true" />
+					<label depth="67" name="nameText" pos="6,-5" text="${name}"  width="600" height="338" />
+					<label depth="67" name="description	Text" pos="6,-50" text="${description}" parse_actions="true" width="588" height="500" />
+				</rect>
+				<rect visible="{showcore}"></rect>
+			</rect>
+		</lootboxentry>
+		<lootboxrecipe_entry>
+			<rect depth="-11" width="516" height="170" style="press, hover" pivot="center" foregroundlayer="false" controller="RecipeEntry" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]" sound_play_on_hover="[default_hover]" >
+				<sprite depth="-11" name="background" width="516" height="170"  pivot="center"  type="sliced" />
+				<sprite depth="4" name="Icon" atlas="ItemIconAtlas" sprite="{recipeicon}" color="{recipeicontint}" size="200,200" pos="160,30" pivot="center" foregroundlayer="true"/>
+				<label depth="4" name="Name" pos="-240,0" width="270" height="60" text="{recipename}" font_size="40" color="{hasingredientsstatecolor}" justify="left" pivot="left"/>
+			</rect>
+		</lootboxrecipe_entry>
+		<lootbox_ingredient>
+			<rect name="row" width="447" height="50" controller="IngredientEntry">
+				<rect depth="2" width="30" height="30" pos="0,0" visible="${visible|false}">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />
+					<sprite depth="3" name="background" sprite="menu_empty3px" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
+					<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[mediumGrey]" pos="0,0" type="sliced" globalopacity="true"/>
+					<sprite depth="6" name="itemIcon" width="64" height="64" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{itemicontint}" />
+					<label depth="7" name="stackValue" pos="-2,-45" width="70" height="28" text="{havecount}" font_size="26" effect="outline" justify="right" />
+					<label depth="3" name="needCount" pos="9999,9999" width="0" height="0" font_size="0" />
+				</rect>
+			</rect>
+		</lootbox_ingredient>
+		<lootbox_buybutton>
+			<rect width="150" height="160" controller="ItemActionEntry" disabled_font_color="[red]" default_font_color="[green]"  disableautobackground="true" >
+				<label depth="5" name="Name" pivot="center" pos="9999,-75" width="160" height="160" color="{statuscolor}" text="" font_size="144" />
+				<sprite depth="4" pivot="center" width="50" height="50" color="{statuscolor}" sprite="ui_game_symbol_shopping_cart"/>
+				<sprite depth="3" pivot="center" name="background" color="[mediumGrey]" type="sliced" on_press="true" on_hover="true" width="100" height="100"  sound_play_on_hover="[default_hover]"/>
+				<sprite depth="2" pivot="center" sprite="menu_empty3px" width="106" height="106" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="-11" name="Icon" size="0,0"  pos="9999,0" />
+				<gamepad_icon depth="-11" name="gamepadIcon" pos="9999,0" pivot="Right" />
+				<label depth="-11" name="keyboardButton" pos="9999,0" width="0" height="0" font_size="0" />
+			</rect>
+		</lootbox_buybutton>
+	</append>
+</config>

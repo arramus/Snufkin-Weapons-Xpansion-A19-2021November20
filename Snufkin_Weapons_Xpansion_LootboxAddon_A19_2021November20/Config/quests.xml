@@ -1,0 +1,130 @@
+<configs>
+	<insertAfter xpath="/quests/quest[@id='quest_tier6complete']" >
+		<quest id="greenlootbox">
+			<property name="name" value="Green LootBox"/>
+			<property name="description_key" value="Green Lootbox"/>
+			<property name="subtitle_key" value="Green Lootbox"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Open LootBox?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="GreenLoot"/>
+		</quest>
+		<quest id="yellowlootbox">
+			<property name="name" value="Yellow LootBox"/>
+			<property name="description_key" value="Yellow LootBox"/>
+			<property name="subtitle_key" value="Yellow LootBox"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Open LootBox?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="YellowLoot"/>
+		</quest>
+		<quest id="redlootbox">
+			<property name="name" value="Red LootBox"/>
+			<property name="description_key" value="Red LootBox"/>
+			<property name="subtitle_key" value="Red LootBox"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Open LootBox?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="RedLoot"/>
+		</quest>
+		<quest id="purplelootbox">
+			<property name="name" value="Purple LootBox"/>
+			<property name="description_key" value="Purple LootBox"/>
+			<property name="subtitle_key" value="Purple LootBox"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Open LootBox?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="PurpleLoot"/>
+		</quest>
+		
+		<quest id="ticket_railgun">
+			<property name="name" value="Railgun"/>
+			<property name="description_key" value="Railgun"/>
+			<property name="subtitle_key" value="Railgun"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Redeem Railgun?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="LootRailgun"/>
+			<reward type="Quest" id="ticket_railgunammo"/>
+		</quest>
+		<quest id="ticket_railgunammo">
+			<property name="name" value="Railgun"/>
+			<property name="description_key" value="Railgun"/>
+			<property name="subtitle_key" value="Railgun"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Redeem Railgun?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="LootRailgunAmmo"/>
+		</quest>
+		
+		<quest id="ticket_gammagun">
+			<property name="name" value="Gamma Gun"/>
+			<property name="description_key" value="Gamma Gun"/>
+			<property name="subtitle_key" value="Gamma Gun"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Redeem Gamma Gun?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="LootGammaGun"/>
+			<reward type="Quest" id="ticket_gammagunammo"/>
+		</quest>
+		<quest id="ticket_gammagunammo">
+			<property name="name" value="Gamma Gun"/>
+			<property name="description_key" value="Gamma Gun"/>
+			<property name="subtitle_key" value="Gamma Gun"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Redeem Gamma Gun?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="LootGammaGunAmmo"/>
+		</quest>
+		<quest id="ticket_hyperblaster">
+			<property name="name" value="HyperBlaster"/>
+			<property name="description_key" value="HyperBlaster"/>
+			<property name="subtitle_key" value="HyperBlaster"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Redeem HyperBlaster?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="LootHyperBlaster"/>
+			<reward type="Quest" id="ticket_hyperblasterammo"/>
+		</quest>
+		<quest id="ticket_hyperblasterammo">
+			<property name="name" value="HyperBlaster"/>
+			<property name="description_key" value="HyperBlaster"/>
+			<property name="subtitle_key" value="HyperBlaster"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="Redeem HyperBlaster?"/>
+			<property name="difficulty" value="insane"/>
+			<reward type="LootItem" id="LootHyperBlasterAmmo"/>
+		</quest>
+		
+	</insertAfter>
+</configs>

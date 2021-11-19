@@ -1,0 +1,258 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="Gamma Gun" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="switch" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+			<ingredient name="resourceForgedSteel" count="40"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceElectricParts" count="25"/>
+		</recipe>
+		<recipe name="Gamma Round" count="100" craft_area="workbench" craft_time="1500">
+			<ingredient name="resourceAcid" count="180"/>
+			<ingredient name="foodRottingFlesh" count="800"/>
+			<ingredient name="resourceScrapPolymers" count="800"/>
+		</recipe>
+		<recipe name="Gamma Round" count="1" craft_area="workbench" craft_time="20">
+			<ingredient name="resourceAcid" count="2"/>
+			<ingredient name="foodRottingFlesh" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
+		</recipe>		
+		<recipe name="Newcomen" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="gunHandgunT1PistolParts" count="5"/>
+			<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceMechanicalParts" count="24"/>
+			<ingredient name="resourceSpring" count="6"/>
+		</recipe>
+		<recipe name="StickyGrenade" count="1" craft_area="workbench" craft_time="20">
+			<ingredient name="thrownGrenade" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="HyperBlaster" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="gunMGT1AK47Parts" count="5"/>
+			<ingredient name="carBattery" count="3"/>
+			<ingredient name="resourceForgedSteel" count="40"/>
+			<ingredient name="resourceMetalPipe" count="20"/>
+			<ingredient name="resourceSpring" count="2"/>
+		</recipe>
+		<recipe name="Energy Cells" count="1000" craft_area="workbench" craft_time="480">
+			<ingredient name="resourceAcid" count="8"/>
+			<ingredient name="carBattery" count="8"/>
+			<ingredient name="resourceScrapLead" count="800"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="800"/>
+		</recipe>
+		<recipe name="Energy Cells" count="100" craft_area="workbench" craft_time="60">
+			<ingredient name="resourceAcid" count="1"/>
+			<ingredient name="resourceScrapLead" count="100"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="100"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<recipe name="Vampire Gauntlets" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="meleeWpnBladeT3MacheteParts" count="12"/>
+			<ingredient name="drugSteroids" count="4"/>
+			<ingredient name="resourceForgedSteel" count="30"/>
+			<ingredient name="resourceMechanicalParts" count="50"/>
+			<ingredient name="resourceSpring" count="4"/>
+		</recipe>
+		<recipe name="Stun Grenade" count="1" craft_area="workbench" craft_time="20">
+			<ingredient name="thrownGrenade" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+		</recipe>
+		<recipe name="turretAuger" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="meleeToolPickT3Auger" count="1"/>
+			<ingredient name="gunBotRoboticsParts" count="4"/>
+			<ingredient name="resourceForgedSteel" count="30"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+		<recipe name="Balrog IX" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="4"/>
+			<ingredient name="meleeWpnKnucklesT1IronKnuckles" count="2"/>
+			<ingredient name="resourceForgedSteel" count="30"/>
+			<ingredient name="resourceLeather" count="12"/>
+			<ingredient name="resourceDuctTape" count="8"/>
+		</recipe>
+		<recipe name="Kronos XII" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="gunShotgunT3AutoShotgun" count="1"/>
+			<ingredient name="modGunScopeSmall" count="1"/>
+			<ingredient name="resourceForgedSteel" count="40"/>
+			<ingredient name="modGunChoke" count="1"/>
+			<ingredient name="resourceSpring" count="8"/>
+		</recipe>	
+		<recipe name="Vulcan" count="1" craft_area="workbench" craft_time="300" tags="learnable">
+			<ingredient name="modGunLaserSight" count="1"/>
+			<ingredient name="modGunScopeSmall" count="1"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceMetalPipe" count="12"/>
+			<ingredient name="resourceSpring" count="12"/>
+		</recipe>
+		<recipe name="CrimsonHunter" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="gunHandgunT2Magnum44" count="1"/>
+			<ingredient name="drinkJarEmpty" count="1"/>
+			<ingredient name="resourceForgedSteel" count="30"/>
+			<ingredient name="medicalBloodBag" count="5"/>
+			<ingredient name="resourceSpring" count="2"/>
+		</recipe>
+		<recipe name="Savery" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="gunRifleT1HuntingRifle" count="1"/>
+			<ingredient name="resourceForgedSteel" count="25"/>
+			<ingredient name="resourceWood" count="150"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceMetalPipe" count="6"/>		
+		</recipe>
+		<recipe name="PP-19 Bizon" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="gunHandgunT3SMG5" count="1"/>
+			<ingredient name="resourceForgedSteel" count="35"/>
+			<ingredient name="gunHandgunT1PistolParts" count="10"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceMetalPipe" count="3"/>		
+		</recipe>		
+		<recipe name="Polearm" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="meleeWpnSpearT3SteelSpearParts" count="10"/>
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceWood" count="30"/>
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+		</recipe>
+		<recipe name="QuadShotgun" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="gunShotgunT1DoubleBarrelParts" count="16"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceWood" count="60"/>
+			<ingredient name="resourceLeather" count="4"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+		</recipe>
+		<recipe name="Railgun" count="1" craft_area="workbench" craft_time="240" tags="learnable,railgun">
+			<ingredient name="gunRifleT1HuntingRifleParts" count="40"/>
+			<ingredient name="meleeWpnBatonT2StunBatonParts" count="25"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="50"/>
+			<ingredient name="resourceElectricParts" count="50"/>
+		</recipe>		
+		<recipe name="RailgunAmmo" count="1" craft_area="workbench" craft_time="10">
+			<ingredient name="ammoDartIron" count="4"/>
+			<ingredient name="resourceForgedSteel" count="4"/>
+		</recipe>
+		<recipe name="Thor Hammer" count="1" craft_area="workbench" craft_time="240" tags="learnable,thorhammer">
+			<ingredient name="meleeWpnSledgeT3SteelSledgehammerParts" count="20"/>
+			<ingredient name="meleeWpnBatonT2StunBatonParts" count="20"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+			<ingredient name="resourceElectricParts" count="40"/>
+		</recipe>		
+		<recipe name="CrossbowMag" count="1" craft_area="workbench" craft_time="240" tags="learnable,crossbowmag">
+			<ingredient name="gunBowT3CompoundCrossbow" count="1"/>
+			<ingredient name="gunBowT1WoodenBowParts" count="25"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="40"/>
+		</recipe>
+
+<!-- Xpansion Weapons-->
+		<recipe name="Klak Attack" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+			<ingredient name="meleeWpnBladeT3MacheteParts" count="3"/>
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+		</recipe>
+			<recipe name="Glass Baseball Bat" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceLeather" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceBrokenGlass" count="10"/>
+		</recipe>	
+			<recipe name="Knife Baseball Bat" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceLeather" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="meleeWpnBladeT1HuntingKnife" count="1"/>
+		</recipe>
+			<recipe name="Star Baseball Bat" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceLeather" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="meleeWpnBladeT1HuntingKnife" count="1"/>
+		</recipe>
+			<recipe name="Metal Bollard Club" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>		
+			<recipe name="DCLXVI Zeus" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+			<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+			<ingredient name="meleeWpnBatonT2StunBatonParts" count="10"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+		<recipe name="DCLXVI Zeus Ammo" count="1" craft_area="workbench" craft_time="10">
+			<ingredient name="ammoDartIron" count="4"/>
+			<ingredient name="resourceForgedSteel" count="4"/>
+		</recipe>
+		<recipe name="arramus Fire" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+        	<ingredient name="gunExplosivesT3RocketLauncherParts" count="3"/>	
+			<ingredient name="resourceForgedIron" count="200"/>
+			<ingredient name="resourceWood" count="30"/>
+	        <ingredient name="resourceSpring" count="3"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+		</recipe>			
+		<recipe name="arramus Fire Round" count="1" craft_area="workbench" craft_time="2">
+			<ingredient name="ammoGasCan" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="Dre X3" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+        	<ingredient name="gunShotgunT0Blunderbuss" count="2"/>	
+			<ingredient name="switch" count="1"/>
+			<ingredient name="drinkJarRedTea" count="2"/>
+	        <ingredient name="resourceForgedIron" count="100"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+		</recipe>			
+		<recipe name="Dre X3 Clucker Round" count="1" craft_area="workbench" craft_time="2">
+			<ingredient name="foodRottingFlesh" count="1"/>
+			<ingredient name="resourceScrapIron" count="1"/>
+			<ingredient name="resourceBone" count="1"/>
+			<ingredient name="resourceLeather" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>			
+		</recipe>
+		<recipe name="oakraven X11" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="gunHandgunT1PistolParts" count="5"/>
+			<ingredient name="meleeWpnClubT3SteelClubParts" count="2"/>
+	        <ingredient name="resourceSpring" count="11"/>
+			<ingredient name="resourceOil" count="11"/>		
+		</recipe>
+		<recipe name="Black Widow" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+			<ingredient name="gunBowT3CompoundBow" count="1"/>
+			<ingredient name="resourceForgedSteel" count="100"/>			
+			<ingredient name="toolForgeCrucible" count="1"/>
+	        <ingredient name="resourceSpring" count="6"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>		
+		</recipe>		
+		<recipe name="ammoRedWidow" count="1" craft_area="workbench" craft_time="120">
+			<ingredient name="resourceForgedSteel" count="1"/>
+			<ingredient name="medicalBloodBag" count="1"/>	
+		</recipe>
+		<recipe name="ammoBlueWidow" count="1" craft_area="workbench" craft_time="120">
+			<ingredient name="resourceForgedSteel" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>	
+		</recipe>
+		<recipe name="Brainsaw" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+			<ingredient name="meleeToolAxeT3ChainsawParts" count="5"/>
+			<ingredient name="vehicleBicycleHandlebars" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="resourceForgedSteel" count="10"/>
+		</recipe>
+		<recipe name="Hazard Spear" count="1" craft_area="workbench" craft_time="120" tags="learnable">
+			<ingredient name="meleeWpnSpearT3SteelSpearParts" count="7"/>
+			<ingredient name="resourceForgedSteel" count="25"/>
+			<ingredient name="resourceWood" count="12"/>
+			<ingredient name="resourceLeather" count="4"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+		</recipe>				
+
+	</append>
+</configs>

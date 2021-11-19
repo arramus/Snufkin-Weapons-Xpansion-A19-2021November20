@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+LootboxMachine,blocks,block,,,Loot Box Machine,,,,,
+LootboxMachineDesc,blocks,block,,,"This Loot Box Machine allows you to spend your colored tickets on selected custom weapons. Snufkin Custom and Xpansion weapons can also be found in loot or crafted to their specific limitations."

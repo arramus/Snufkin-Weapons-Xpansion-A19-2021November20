@@ -1,0 +1,136 @@
+<configs>
+	<append xpath="/items">
+		<item name="jailTicket">
+			<property name="CustomIcon" value="casinoCoin" />
+			<property name="HoldType" value="21" />
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab"/>
+			<property name="Meshfile" value="#Other/Items?Misc?casino_coinPrefab" />
+			<property name="HandMeshfile" value="#Other/Items?Misc/casino_coinPrefab" />
+			<property name="Material" value="MresourceScrapBrassSmall"/>
+			<property name="FuelValue" value="1"/>
+			<property name="Weight" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property class="Action0">
+				<!-- UseAction -->
+				<property name="Class" value="Repair"/>
+				<property name="Delay" value=".64"/>
+				<!-- Repair actions still need the delay amount -->
+				<property name="Repair_amount" value="0"/>
+				<property name="Upgrade_hit_offset" value="0"/>
+				<property name="Sound_start" value="repair_block"/>
+				<property name="Allowed_upgrade_items" value="jailTicket"/>
+				<property name="UsePowerAttackAnimation" value="false"/></property>
+			<property class="Action1">
+				<!-- UseAction -->
+				<property name="Class" value="Repair"/>
+				<property name="Delay" value=".64"/>
+				<!-- Repair actions still need the delay amount -->
+				<property name="Repair_amount" value="0"/>
+				<property name="Upgrade_hit_offset" value="0"/>
+				<property name="Sound_start" value="repair_block"/>
+				<property name="Allowed_upgrade_items" value="jailTicket"/>
+				<property name="UsePowerAttackAnimation" value="false"/></property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="1"/>
+				<passive_effect name="PlayerExpGain" operation="base_set" value="-0.000000000001" />
+			</effect_group>
+		</item>
+		<item name="Green Ticket">
+			<property name="HoldType" value="21"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="0,255,0" />
+			<property name="ItemTypeIcon" value="treasure"/>
+			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="30000"/>
+			<property name="EconomicValue" value="1600"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Special Items"/>
+		</item>
+		<item name="Yellow Ticket">
+			<property name="Extends" value="Green Ticket"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="ItemTypeIcon" value="treasure"/>
+			<property name="CustomIconTint" value="255,255,0" />
+		</item>
+		<item name="Red Ticket">
+			<property name="Extends" value="Green Ticket"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="ItemTypeIcon" value="treasure"/>
+			<property name="CustomIconTint" value="255,0,0" />
+		</item>
+		<item name="Purple Ticket">
+			<property name="Extends" value="Green Ticket"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="ItemTypeIcon" value="treasure"/>
+			<property name="CustomIconTint" value="128,0,128" />
+		</item>
+		
+		<item name="Railgun Ticket">
+			<property name="Extends" value="questMaster"/>
+			<property name="ItemTypeIcon" value="treasure"/>
+			<!--property name="CustomIcon" value="gunMR10"/--> <!--Obsolete and replaced below as this model is part of the Railgun-->
+			<property name="CustomIcon" value="gunRifleT2MarksmanRifle"/>	
+			<property name="CustomIconTint" value="180,180,255"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="ticket_railgun"/>
+				<property name="Sound_start" value="UseActions/open_chest"/></property>
+		</item>
+		<item name="Gamma Gun Ticket">
+			<property name="Extends" value="questMaster"/>
+			<property name="ItemTypeIcon" value="treasure"/>
+			<property name="CustomIconTint" value="200, 0, 200"/>
+			<property name="CustomIcon" value="spotlightNailedDownPOI"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="ticket_gammagun"/>
+				<property name="Sound_start" value="UseActions/open_chest"/></property>
+		</item>
+		<item name="HyperBlaster Ticket">
+			<property name="Extends" value="questMaster"/>
+			<property name="ItemTypeIcon" value="treasure"/>
+			<!--property name="CustomIcon" value="gunBlunderbuss"/--> <!--Updated below-->
+			<property name="CustomIcon" value="gunShotgunT0Blunderbuss"/>
+			<property name="CustomIconTint" value="200, 0, 200"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="ticket_hyperblaster"/>
+				<property name="Sound_start" value="UseActions/open_chest"/></property>
+		</item>
+		
+		
+		<item name="LVL1 Green LootBox">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIcon" value="cntMunitionsBox"/>
+			<property name="CustomIconTint" value="0,255,0" />
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="greenlootbox"/>
+				<property name="Sound_start" value="UseActions/open_chest"/></property>
+		</item>
+		<item name="LVL2 Yellow LootBox">
+			<property name="Extends" value="LVL1 Green LootBox"/>
+			<property name="CustomIcon" value="cntMunitionsBox"/>
+			<property name="CustomIconTint" value="255,255,0" />
+			<property class="Action0">
+				<property name="QuestGiven" value="yellowlootbox"/></property>
+		</item>
+		<item name="LVL3 Red LootBox">
+			<property name="Extends" value="LVL1 Green LootBox"/>
+			<property name="CustomIcon" value="cntMunitionsBox"/>
+			<property name="CustomIconTint" value="255,0,0" />
+			<property class="Action0">
+				<property name="QuestGiven" value="redlootbox"/></property>
+		</item>
+		<item name="LVL4 Purple LootBox">
+			<property name="Extends" value="LVL1 Green LootBox"/>
+			<property name="CustomIcon" value="cntMunitionsBox"/>
+			<property name="CustomIconTint" value="128,0,128" />
+			<property class="Action0">
+				<property name="QuestGiven" value="purplelootbox"/></property>
+		</item>
+	</append>
+</configs>

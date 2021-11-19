@@ -1,0 +1,14 @@
+<config>
+	<append xpath="/xui/ruleset">
+		<window_group name="workstation_LootboxMachine" controller="XUiC_WorkstationWindowGroup">
+			<window name="RedeemCraftingList"/>
+			<window name="RedeemCraftingList_Overlay"/>
+			<window name="RedeemMainA"/>
+			<window name="RedeemInfoPanel"/>
+			<window name="RedeemPusher"/>
+			<window name="RedeemCraftingQueue"/>
+			<window name="RedeemOutput" />
+			<window name="Girl21"/>
+		</window_group>
+	</append>
+</config>

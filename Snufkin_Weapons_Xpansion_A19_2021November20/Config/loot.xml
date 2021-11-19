@@ -1,0 +1,59 @@
+<configs>
+<append xpath="/lootcontainers/lootcontainer[@id='41']">
+		<item group="SnufkinCustomWeapons" prob="0.275" count="1"/>
+	</append>
+<insertBefore xpath="/lootcontainers/lootgroup[@name='groupHeroChestLoot']" >
+	<lootgroup name="SnufkinCustomWeapons">
+		<item name="Gamma Gun" prob="0.0025"/> <!--Projectile Weapon--> 		
+		<item name="Newcomen" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="StickyGrenade" prob="0.01"/> <!--Projectile Weapon-->		
+		<item name="HyperBlaster" prob="0.0025"/> <!--Projectile Weapon-->		
+		<item name="Vampire Gauntlets" prob="0.01"/> <!--Melee Weapon-->
+		<item name="Stun Grenade" prob="0.01"/> <!--Projectile Weapon-->		
+		<item name="turretAuger" prob="0.0025"/> <!--Melee Weapon-->
+		<item name="Balrog IX" prob="0.0025"/> <!--Melee Weapon-->
+		<item name="Kronos XII" prob="0.0025"/> <!--Projectile Weapon-->		
+		<item name="Vulcan" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="CrimsonHunter" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="Savery" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="PP-19 Bizon" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="Polearm" prob="0.01"/> <!--Melee Weapon-->
+		<item name="QuadShotgun" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="Railgun" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="Thor Hammer" prob="0.01"/> <!--Melee Weapon-->
+		<item name="CrossbowMag" prob="0.0025"/> <!--Projectile Weapon-->
+<!--Xpansion Pack Weapons-->
+		<item name="Klak Attack" prob="0.01"/> <!--Melee Weapon-->
+		<item name="Glass Baseball Bat" prob="0.01"/> <!--Melee Weapon-->
+		<item name="Knife Baseball Bat" prob="0.01"/> <!--Melee Weapon-->
+		<item name="Star Baseball Bat" prob="0.01"/> <!--Melee Weapon-->
+		<item name="Metal Bollard Club" prob="0.01"/> <!--Melee Weapon-->
+		<item name="DCLXVI Zeus" prob="0.0025"/> <!--Projectile Weapon-->	
+		<item name="arramus Fire" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="Dre X3" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="oakraven X11" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="Black Widow" prob="0.0025"/> <!--Projectile Weapon-->
+		<item name="Brainsaw" prob="0.01"/> <!--Melee Weapon-->
+		<item name="Hazard Spear" prob="0.01"/> <!--Melee Weapon-->		
+<!--Xpansion Pack Hats/Clothing/Friends-->
+		<item name="Cow Helmet" prob="0.0025"/> <!--Hat Mod-->
+		<item name="Pumpkin Hat" prob="0.0025"/> <!--Hat Mod-->
+		<item name="Magnet Hat" prob="0.0025"/> <!--Hat Mod-->
+		<item name="WagonWheel" prob="0.0025"/> <!--Clothing Mod-->
+		<item name="Rabbit Friend" prob="0.0025"/> <!--Friend Mod-->
+		<item name="Snake Friend" prob="0.0025"/> <!--Friend Mod-->
+		<item name="Vulture Friend" prob="0.0025"/> <!--Friend Mod-->
+		<item name="Big Backpack" prob="0.0025"/> <!--Clothing Mod-->
+		<item name="Pumpkin Man" prob="0.0025"/> <!--Hat Mod-->
+		<item name="SpeakerHat" prob="0.0025"/> <!--Hat Mod-->
+<!--Xpansion Pack Mods-->
+		<item name="modWeaponDurability" prob="0.005"/> <!--Weapon Mod-->	
+		
+	</lootgroup>
+</insertBefore>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupBirdNest']" >
+	    <item name="Dre X3 Clucker Round" count="1,5" prob="0.2"/>
+	</append>
+
+</configs>

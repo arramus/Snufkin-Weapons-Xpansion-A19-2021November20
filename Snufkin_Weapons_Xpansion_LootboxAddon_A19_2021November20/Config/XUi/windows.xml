@@ -1,0 +1,194 @@
+<config>
+	<append xpath="/windows">
+		<window name="RedeemMainA"  depth="51" width="397" height="688"  cursor_area="true" >
+			<panel depth="23" controller="CharacterFrameWindow"  pos="0,0" width="500" height="62" disableautobackground="true">
+				<panel name="header" pos="99999,99999" width="0" height="0">
+					<sprite depth="2" name="windowIcon" pos="99999,99999" width="0" height="0"/>
+					<label depth="2" name="characterName" pos="99999,99999" width="0" height="0"/>
+					<sprite depth="2" name="windowIcon" pos="99999,99999" width="0" height="0"/>
+					<label depth="2" name="levelNumber" pos="99999,99999" width="0" height="0"/>
+				</panel>			
+				<rect depth="2" name="searchControls" width="327" height="43" pos="349,320">
+					<texture depth="9" pos="260,80" width="462" height="221" pivot="center" texture="@https://i.postimg.cc/VNSFsy5j/wheel.png"/>
+					<sprite depth="8" name="backgroundMain" pos="99999,99999" width="0" height="0"/>
+					<button name="characterButton" style="press" width="1" height="1" pos="50,-22" collider_scale="80.0" pivot="center" selected="true">
+						<texture depth="5" width="70" height="82" pivot="center" texture="@https://i.postimg.cc/cChSxkJN/Arrow.png"/>
+					</button>
+					<button name="statButton" style="press" width="1" height="1" pos="500,-22" collider_scale="80.0" pivot="center">
+						<texture depth="5" width="-70" height="82" pivot="center" texture="@https://i.postimg.cc/cChSxkJN/Arrow.png"/>
+					</button>
+					<button depth="4" name="coreStatButton" style="icon30px, press" pos="99999,99999" width="0" height="0" sprite="ui_game_symbol_trophy" pivot="center"/>
+				</rect>
+				<rect>
+					<panel name="previewFrame" pos="99999,99999" width="0" height="0">
+						<rect>
+							<sprite depth="8" name="backgroundMain" pos="99999,99999" width="0" height="0"/>
+							<texture depth="2" name="playerPreview" material="Materials/Transparent Colored" pos="99999,99999" size="1,1"/>
+						</rect>
+					</panel>
+					<panel name="equipment" pos="99999,99999" width="0" height="0">
+						<grid name="inventory"/>
+					</panel>
+				</rect>
+				<rect visible="{showcharacter}" pos="485,200">
+					<lootboxentry texture="sgFBGvjH/Crimson-Hunter" posx="0" posy="0" name="CRIMSON HUNTER" description="A modified revolver with a special contact grenade attached that requires charging before throwing. You need to accumulate 5 kills to charge it completely, after which you can throw it using [action:local:Secondary:emptystring:KeyboardWithAngleBrackets]. Successful kills are indicated by the number on the left side of the screen. A fully charged grenade will be filled with blood. Changing weapons will reset the counter. This weapon doesn't have a zoom mode."/>
+					<lootboxentry texture="7LwfXdTg/Crossbow-Mag" posx="280" posy="0" name="CROSSBOW MAG" description="A compound crossbow with a 10-bolt capacity and very fast semi-auto firing mode. It infringes more damage than a regular crossbow and the bolts fly further and with more force."/>
+					<lootboxentry texture="1zB4dBpb/GammaGun" posx="0" posy="-120" name="GAMMA GUN" description="A crude but very deadly weapon that shoots projectiles that explode on impact, releasing radiation on a 5 block radius that inflicts great damage on living entities, but it's not very effective against zombies. Careful where you shoot it, you are not immune to this effect."/>
+					<lootboxentry texture="WbZzVTGG/Hyperblaster" posx="280" posy="-120" name="HYPERBLASTER" description="An assault rifle that shoots UV bolts instead of bullets. It has a very high rate of fire but low damage output per shot, so to use effectively you need to fire in long bursts."/>
+					<lootboxentry texture="R0gVdFmB/Kronos-XII" posx="0" posy="-240" name="KRONOS XII" description="A high-grade fully automatic Shotgun with a 30 cartridge drum magazine and a special attached module. Accumulate 20 shots and activate the module pressing [action:permanent:ToggleFlashlight:emptystring:KeyboardWithAngleBrackets]. For 20 seconds, spread and knockback will be reduced significantly, while the max range will be doubled. Successful hits are indicated by the number on the left side of the screen. A fully charged module will emit an audible signal. Changing weapons will reset the counter."/>
+					<lootboxentry texture="25kSnWPG/Newcomen" posx="280" posy="-240" name="NEWCOMEN" description="A steam-powered Submachine Gun with a high magazine capacity and dual fire mode. Press [action:local:Primary:emptystring:KeyboardWithAngleBrackets] to shoot in semi-auto, and hold [action:local:Secondary:emptystring:KeyboardWithAngleBrackets] to unleash a 30-shot burst. Extremely deadly at short range.  This weapon doesn't have a zoom mode."/>
+					<lootboxentry texture="T1zPb465/PP-19-Bizon" posx="0" posy="-360" name="PP-19 BIZON" description="A Russian Submachine Gun with a very high magazine capacity, low recoil and low spread. It is able to deal with multiple enemies effectively. However, the damage output is relatively low."/>
+					<lootboxentry texture="NGSFZ5HG/Quad-Shotgun" posx="280" posy="-360" name="QUAD SHOTGUN" description="A natural evolution of the double-barrel shotgun. It holds 4 cartridges with dual fire mode. Pressing [action:local:Primary:emptystring:KeyboardWithAngleBrackets] will fire individual shots, while [action:local:Secondary:emptystring:KeyboardWithAngleBrackets] will release the four cartridges in a quick barrage. This weapon doesn't have a zoom mode."/>
+					<lootboxentry texture="Gm12hVKZ/Railgun" posx="0" posy="-480" name="RAILGUN" description="A modified sniper rifle that use an electromagnetic coil to fire a steel projectile at high velocity. Needs charging before shooting. The longer you charge the higher the damage and flytime of the projectile will be. A full charge is indicated by beeps."/>
+					<lootboxentry texture="RFqCDBCn/Savery" posx="280" posy="-480" name="SAVERY" description="A sniper rifle that uses Magnum ammo and has a 12 cartridge double-cylinder that allows it to fire in rapid succession and reload very fast. Very effective at long and medium range."/>
+					<lootboxentry texture="F1X9zkyj/Thors-Hammer" posx="0" posy="-600" name="THOR'S HAMMER" description="A modified Steel Sledgehammer with an electric shock device attached. On each successful hit it discharges a current on the target that stuns it for a few seconds. Using the Power Attack on a block or an enemy discharges the current over an area."/>
+					<lootboxentry texture="BbKSJBKS/Turret-Auger" posx="280" posy="-600" name="TURRET AUGER" description="A melee, short range turret, perfect for placing on corners or blocking hallways. While holding it, you can press [action:local:Primary:emptystring:KeyboardWithAngleBrackets] to use it as a normal auger and [action:local:Secondary:emptystring:KeyboardWithAngleBrackets] to place it on the ground. Like other motor tools it needs Gasoline to operate."/>
+				</rect>
+				<rect visible="{showstats}" pos="485,200">
+					<lootboxentry texture="fLFW4rkq/Vampire-Gauntlets" posx="0" posy="0" name="VAMPIRE GAUNTLETS" description="A set of high power gauntlets with an incoporated health-draining device. Accumulate 20 hits and activate the device by pressing [action:permanent:ToggleFlashlight:emptystring:KeyboardWithAngleBrackets]. You will gain 50% life steal and 50% faster movement speed. The effect lasts 10 seconds. Successful hits are indicated by the number on the left side of the screen. A fully charged device will emit an audible signal. Changing weapons will reset the counter."/>
+					<lootboxentry texture="x1ydk5Fq/LHvdWD5" posx="280" posy="0" name="VULCAN" description="An electrically fired Gatling-style rotary cannon which fires 7.62 mm rounds at an extremely high rate and has a very high ammo capacity. The downside is that it must be charged before firing in fully-auto by holding [action:local:Primary:emptystring:KeyboardWithAngleBrackets] or [action:local:Secondary:emptystring:KeyboardWithAngleBrackets]. It also has a movement penalty."/>
+					<lootboxentry texture="Gmgw19Qp/BalrogIX" posx="0" posy="-120" name="BALROG IX" description="A set of high power melee weapons. Accumulate 5 eliminations and activate the device by pressing the [action:permanent:ToggleFlashlight:emptystring:KeyboardWithAngleBrackets]. You will gain increased attack speed and the necessary stamina to support it."/>
+					<lootboxentry texture="wvJSJ2dt/Polearm" posx="280" posy="-120" name="POLEARM" description="A long range melee weapon that is very effective in open high areas but somewhat limited when in restricted areas."/>
+					<lootboxentry texture="3NTzZGKt/DCLXVIZeus" posx="0" posy="-240" name="DCLXVI ZEUS" description="A modified Nail gun with sniper potential that uses an electromagnetic coil to fire a charged steel projectile at high velocity. Needs charging before shooting by holding [action:local:Primary:emptystring:KeyboardWithAngleBrackets]. The longer you charge the higher the damage and flytime of the projectile will be. A full charge is indicated by beeps."/>
+					<lootboxentry texture="Dyg3Bx4L/arramus-Fire" posx="280" posy="-240" name="ARRAMUS FIRE" description="Unleash the pyromaniac in you. Beware of splash damage as it will not make you very popular. Walking increases accuracy."/>
+					<lootboxentry texture="Jhyw7m65/DreX3" posx="0" posy="-360" name="DRE X3" description="A highly versatile weapon that fires X3 types of ammunition; DCLXVI Zeus Ammo, arramus Fire Rounds, and Dre X3 Clucker Rounds. Dre X3 Clucker Rounds are found in a bird's nest or crafted."/>
+					<lootboxentry texture="Xqkm1vq4/oakraven-X11" posx="280" posy="-360" name="OAKRAVEN X11" description="A made to order weapon from the mysterious gunsmith oakraven. Fires Magnum rounds to devastating effect. After 10 eliminations, press [action:local:Secondary:emptystring:KeyboardWithAngleBrackets] to fire a bonus explosive projectile made from recycled spent Magnum cartridges."/>
+					<lootboxentry texture="nhhb5qq5/Black-Widow" posx="0" posy="-480" name="BLACK WIDOW" description="A devastating bow that is deemed to have been returned from Middle Earth. A sleek and stealthy weapon with a base of 300% stealth damage. Highly accurate with mininal recalibration required for long range release."/>
+					<lootboxentry texture="CK93zt9T/Brainsaw" posx="280" posy="-480" name="BRAINSAW" description="This chainsaw is modified with a reinforced chassis, diamond tipped teeth, and a plasma powered engine. The plasma field has been known to bring on bouts of rage as you release the Evil Dead from their suffering."/>
+					<lootboxentry texture="m2dKJf3q/Hazard-Spear.png" posx="0" posy="-600" name="HAZARD SPEAR" description="The Hazard Spear is made with rare Wasteland metals that provide about 10% benefit compared to the Steel Spear for attack damage, speed of attack, weight, and degradation."/>
+					<lootboxentry texture="0yXJzCNY/Later" posx="280" posy="-600" name="COMING SOON" description=""/>
+				</rect>
+				<rect visible="{showcore}"/>
+			</panel>
+		</window>
+		<window name="RedeemOverlay" anchor="LeftTop" depth="40" >
+			<panel name="content" width="1920" height="1080" depth="10" pos="0,0" disableautobackground="true">
+				<rect name="background" width="1920" height="1080" depth="11" pos="0, 0" >
+					<texture on_drag="true" on_press="true" width="1842" height="1036" texture="@https://i.postimg.cc/RhdyBrbc/Trader.png" depth="11" pos="0,0"/>
+				</rect>
+			</panel>
+			<sprite depth="-10" color="0,0,0,225" type="sliced" width="1842" height="1036" globalopacity="true" />
+			<sprite depth="-10" color="0,0,0,255"  pos="1225,0" type="sliced" width="1842" height="1036" globalopacity="true" />
+		</window>
+		<window name="Girl21" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.postimg.cc/RhdyBrbc/Trader.png" />
+		</window>
+		<window name="RedeemCraftingList" depth="40" width="397" height="688" pos="0,0" controller="CraftingListInfo" cursor_area="true" >
+			<panel name="header" height="43" depth="1"  pos="99999,99999">
+				<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="Craft_Icon_Basics"/>
+				<label style="header.name" text="basics" text_key="xuiBasics" />
+			</panel>
+			<panel name="content" width="100%" height="650"  pos="0,-43" on_scroll="true" disableautobackground="true">
+				<rect depth="2" name="categorySelector" width="390" height="44"  pos="99999,99999">
+					<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
+					<sprite color="[mediumGrey]" type="sliced" />
+					<grid name="categories" pos="2,-7" rows="1" cols="9" width="390" height="43" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
+						<category_icon />
+					</grid>
+				</rect>
+				<rect depth="3" name="searchControls" width="390" height="44" pos="99999,99999">
+					<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
+					<sprite color="[darkGrey]" type="sliced" />
+					<button depth="4" name="favorites" style="icon30px, press" pos="18,-22" sprite="server_favorite" pivot="center" sound="[paging_click]" tooltip="Favorites" tooltip_key="lblFavorites" collider_scale="1.5" />
+					<panel pos="104,0" width="200" disableautobackground="true">
+						<sprite depth="4" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/>
+						<recipe_search depth="5" name="searchInput"/>
+					</panel>
+					<panel pos="286,0" width="104" height="43" disableautobackground="true">
+						<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" />
+						<rect depth="4" pos="37,-7" >
+							<sprite name="background" style="icon30px" color="[black]" type="sliced" />
+							<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
+						</rect>
+						<button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" />
+					</panel>
+				</rect>
+				<grid name="recipes" rows="4" cols="1" pos="0,408" width="390" height="552" cell_width="392" cell_height="195" controller="RecipeList" repeat_content="true" arrangement="vertical" >
+					<lootboxrecipe_entry name="0"/>
+				</grid>
+			</panel>
+		</window>
+		<window name="RedeemCraftingList_Overlay" depth="40"  pos="0,-336" width="546" height="796" >
+			<texture width="530" height="778"  pivot="center" texture="@https://i.postimg.cc/sxvB7WGq/Background.png" pos="0,402"/>
+		</window>
+		<window name="RedeemPusher" width="99999" height="999999999" panel="Center" cursor_area="true" />
+		<window name="RedeemCraftingQueue" pos="99999,-8"  width="397" height="78" cursor_area="true" >
+			<rect depth="0" pos="96,0" width="303" controller="CraftingQueue">
+				<grid name="queue" rows="1" cols="4" pos="3,-13" cell_width="75" cell_height="75" repeat_content="true">
+					<recipe_stack name="0"/>
+				</grid>
+			</rect>
+		</window>
+		<window name="RedeemInfoPanel" depth="40" width="603" height="392" pos="0,-8" controller="CraftingInfoWindow" cursor_area="true" >
+			<panel name="header" height="43" depth="1" pos="99999,99999" backgroundspritename="ui_game_panel_header">
+				<sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="{itemgroupicon}"/>
+				<label style="header.name" text="{itemname}" />
+				<rect pos="350,0" name="requiredToolOverlay">
+					<sprite size="24,24" depth="2" name="requiredToolCheckmark" pos="0,-8" sprite="ui_game_symbol_check" color="[red]"/>
+					<label depth="2" pos="35,-8" name="requiredToolText" width="200" height="32" text="Required" text_key="xuiRequired" font_size="32" upper_case="true" justify="left"/>
+				</rect>
+			</panel>
+			<rect name="contentCraftingInfo" height="381" depth="1" pos="0,-46">
+				<sprite depth="5" name="backgroundMain" pos="99999,99999" sprite="menu_empty3px" width="603" height="345" color="[black]" type="sliced" fillcenter="false" />
+				<rect depth="1" pos="99999,99999" name="preview" width="147" height="147">
+					<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="153" height="153" color="[black]" type="sliced" fillcenter="false" />
+					<sprite depth="1" color="[darkGrey]" type="sliced" globalopacity="true" />
+					<sprite depth="12" name="itemPreview" width="110" height="110" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="74,-58" pivot="center" foregroundlayer="true"/>
+					<sprite depth="8" name="itemtypeicon" width="32" height="32" sprite="ui_game_symbol_{itemtypeicon}" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+					<sprite depth="3" name="durabilityBackground" height="20" width="145" color="48,48,48,255" type="sliced" pos="1, -100" visible="{hasdurability}"/>
+					<filledsprite depth="4" name="durabilityBar" height="20" width="145" color="{durabilitycolor}" type="filled" pos="1, -100" fill="{durabilityfill}" visible="{hasdurability}" />
+					<label depth="7" name="durabilityValue" pos="0,-91" width="145" height="32" text="{durabilitytext}" font_size="30" justify="{durabilityjustify}" effect="outline" visible="false"/>
+					<sprite depth="3" name="clockIcon" size="24,24" sprite="ui_game_symbol_clock" pos="25, -121" type="sliced" color="[iconColor]" foregroundlayer="true" />
+					<label depth="3" name="craftingTime" width="100" height="32" pos="55, -120" text="{craftingtime}" font_size="26" color="[beige]"/>
+				</rect>
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="99999,99999" width="153" height="195" color="[black]" type="sliced" fillcenter="false" />
+				<grid name="itemActions" rows="2" cols="1" pos="210,-300" width="148" cell_width="147" cell_height="42" controller="ItemActionList">
+					<rect depth="1" name="actions" width="147"  pos="99999,99999" height="225">
+						<sprite pos="99999,99999" color="[mediumGrey]" type="sliced" height="43" />
+						<rect name="recipeCraftCountControl" width="120" height="210" pos="99999,99999"  controller="RecipeCraftCount">
+							<button depth="2" name="countDown" style="icon30px, press" pos="-10,-20" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+							<count_control_input name="count_input" depth="2" pos="5,-5" />
+							<button depth="2" name="countUp" style="icon30px, press" pos="64,-20" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+							<button depth="2" name="countMax" style="icon30px, press" pos="96,-20" sprite="ui_game_symbol_arrow_max" pivot="center" sound="[paging_click]"/>
+						</rect>
+					</rect>
+					<lootbox_buybutton />
+					<sprite depth="3" name="fillerBackground" height="0" width="0" pos="99999,99999" color="[transparent]" />
+				</grid>
+				<rect depth="2" name="searchControls" width="448" height="43" pos="99999,99999">
+					<sprite depth="1" pos="99999,99999" color="[mediumGrey]" type="sliced" globalopacity="true" />
+					<button depth="4" name="ingredientsButton" style="icon30px, press" pos="22,-22" sprite="ui_game_symbol_resource" pivot="center" tooltip_key="ingredient" sound="[paging_click]" selected="true" />
+					<button depth="4" name="descriptionButton" style="icon30px, press" pos="65,-22" sprite="ui_game_symbol_book" pivot="center" tooltip_key="lblBookDesc" sound="[paging_click]" />
+					<button depth="4" name="showunlocksButton" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_unlock" pivot="center" tooltip_key="xuiSkillUnlocks" sound="[paging_click]" visible="{showunlockedbytab}" />
+				</rect>
+				<rect depth="1"  pos="99999,99999" name="description" width="447" height="328" visible="{showdescription}">
+					<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="99999,99999" width="453" height="303" color="[black]" type="sliced" fillcenter="false" />
+					<rect visible="true">
+						<sprite depth="1" pos="99999,99999" color="[darkGrey]" type="sliced" globalopacity="true" height="301" />
+						<label depth="3" name="descriptionText" pos="99999,99999" text="{itemdescription}"  width="440" height="294" />
+					</rect>
+				</rect>
+				<rect depth="1" pos="-310,-300" name="ingredients" width="447" height="264" >
+					<grid columns="6" width="447" height="231" cell_height="50" cell_width="75" controller="IngredientList" arrangement="horizontal">
+						<lootbox_ingredient name="1"/>
+						<lootbox_ingredient name="2"/>
+						<lootbox_ingredient name="3"/>
+						<lootbox_ingredient name="4"/>
+					</grid>
+				</rect>
+				<sprite depth="18" sprite="menu_empty3px" pos="99999,99999" width="147" height="110" color="[black]" type="sliced" fillcenter="false" />
+				<rect pos="99999,99999" name="unlockedBy" width="447" height="264" visible="{showunlockedby}"/>
+			</rect>
+		</window>
+		<window name="RedeemOutput" pos="99999,-8" width="228" height="198" anchor="CenterTop" cursor_area="true" >
+			<panel style="header.panel">
+				<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+				<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
+			</panel>
+			<rect name="content" depth="0" pos="0,-46" height="150" disablefallthrough="true" on_press="true">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[mediumGrey]" type="sliced" fillcenter="false" on_press="true" />
+				<grid name="inventory" rows="0" cols="0" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true"/>
+			</rect>
+		</window>
+	</append>
+</config>

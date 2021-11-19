@@ -1,0 +1,108 @@
+<configs>
+	<append xpath="/lootcontainers/lootqualitytemplates">
+		<lootqualitytemplate name="default_qualityT">
+			<qualitytemplate level="1,999999">
+				<loot quality="1" prob="0.065"/>
+				<loot quality="2" prob="0.125"/>
+				<loot quality="3" prob="0.175"/>
+				<loot quality="4" prob="0.225"/>
+				<loot quality="5" prob="0.275"/>
+				<loot quality="6" prob="0.3"/>
+			</qualitytemplate>
+		</lootqualitytemplate>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='73']"> <!--Boss Dropped Loot-->
+		<item name="Green Ticket" prob=".33"/>
+		<item name="Yellow Ticket" prob=".1"/>
+		<item name="Red Ticket" prob=".01"/>
+		<item name="Purple Ticket" prob=".0075"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='71']"> <!--Strong Zombie Dropped Loot-->
+		<item name="Green Ticket" prob=".33"/>
+		<item name="Yellow Ticket" prob=".1"/>
+		<item name="Red Ticket" prob=".01"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='70']"> <!--Regular Zombie Dropped Loot-->
+		<item name="Green Ticket" prob=".33"/>
+		<item name="Yellow Ticket" prob=".1"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='61']"> <!--Buried Loot Treasure Chest-->
+		<item name="Green Ticket" prob=".33"/>
+		<item name="Yellow Ticket" prob=".1"/>
+		<item name="Red Ticket" prob=".015"/>
+		<item name="Purple Ticket" prob=".01"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='41']"> <!--Hardened Metal Chest-->
+		<item name="Green Ticket" prob=".33"/>
+		<item name="Yellow Ticket" prob=".1"/>
+		<item name="Red Ticket" prob=".01"/>
+		<item name="Purple Ticket" prob=".0075"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='7']"> <!--Gun Safe-->
+		<item name="Green Ticket" prob=".33"/>
+		<item name="Yellow Ticket" prob=".1"/>
+		<item name="Red Ticket" prob=".015"/>
+		<item name="Purple Ticket" prob=".01"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='6']"> <!--WallSafe / DeskSafe-->
+		<item name="Green Ticket" prob=".33"/>
+		<item name="Yellow Ticket" prob=".1"/>
+		<item name="Red Ticket" prob=".01"/>
+		<item name="Purple Ticket" prob=".0075"/>
+	</append>	
+
+	<append xpath="/lootcontainers">
+
+
+		<lootgroup name="LootRailgun" loot_quality_template="default_qualityT">
+			<item name="Railgun"/>
+		</lootgroup>
+		<lootgroup name="LootRailgunAmmo">
+			<item name="RailgunAmmo" count="50"/>
+		</lootgroup>
+		<lootgroup name="LootHyperBlaster" loot_quality_template="default_qualityT">
+			<item name="HyperBlaster"/>
+		</lootgroup>
+		<lootgroup name="LootHyperBlasterAmmo">
+			<item name="Energy Cells" count="100"/>
+		</lootgroup>
+		<lootgroup name="LootGammaGun" loot_quality_template="default_qualityT">
+			<item name="Gamma Gun"/>
+		</lootgroup>
+		<lootgroup name="LootGammaGunAmmo">
+			<item name="Gamma Round" count="30"/>
+		</lootgroup>
+
+		<lootgroup name="GreenLoot" loot_quality_template="default_qualityT">
+			<item name="PP-19 Bizon" prob=".17"/>
+			<item name="QuadShotgun" prob=".17"/>
+			<item name="turretAuger" prob=".17"/>
+			<item name="Balrog IX" prob=".17"/>
+			<item name="Dre X3" prob=".17"/>
+			<item name="Hazard Spear" prob=".17"/>			
+		</lootgroup>
+		<lootgroup name="YellowLoot" loot_quality_template="default_qualityT">
+			<item name="Newcomen" prob=".17"/>
+			<item name="Savery" prob=".17"/>
+			<item name="Thor Hammer" prob=".17"/>
+			<item name="Polearm" prob=".17"/>
+			<item name="arramus Fire" prob=".17"/>
+			<item name="Brainsaw" prob=".17"/>
+		</lootgroup>
+		<lootgroup name="RedLoot" loot_quality_template="default_qualityT">
+			<item name="CrossbowMag" prob=".17"/>
+			<item name="HyperBlaster Ticket" prob=".17"/>
+			<item name="Railgun Ticket" prob=".17"/>
+			<item name="Vampire Gauntlets" prob=".17"/>
+			<item name="DCLXVI Zeus" prob=".17"/>
+			<item name="Black Widow" prob=".17"/>			
+		</lootgroup>
+		<lootgroup name="PurpleLoot" loot_quality_template="default_qualityT">
+			<item name="Gamma Gun Ticket" prob=".2"/>
+			<item name="Kronos XII" prob=".2"/>
+			<item name="Vulcan" prob=".2"/>
+			<item name="CrimsonHunter" prob=".2"/>
+			<item name="oakraven X11" prob=".2"/>
+		</lootgroup>
+	</append>
+</configs>
